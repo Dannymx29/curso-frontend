@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            ::placeholder{
+                color: tomato;
+            }
+            
+            p{
+                color: salmon
+            }
+
+            p::first-letter{
+                color: rgb(12, 223, 223);
+            }
+            p::before{
+                content: "*";
+            }
+            p::after{
+                content: "*";
+            }
+            
+            p:hover{
+                color: skyblue;
+            }
+
+            div p:nth-child(2){
+                color: violet;
+            }
+           
+    </style>
+</head>
+<body>
+    <p>hola</p>
+
+    <div>
+        <p>Los del</p>
+        <p>Crew</p>
+        <p>De Calavera</p>
+    </div>
+
+    <input type="text" placeholder="name">
+</body>
+</html>
